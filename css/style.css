@@ -1,6 +1,44 @@
-
+:root {
+    --lightblue: #1289b2;
+    --green: #0bd6a1;
+    --yellow: #ffd166;
+    --red: #f0466f;
+    --darkblue: #083b4c;
+}
 
 
 body {
-    background-color: #083b4c;
+    background-color: var(--darkblue);
+}
+
+ul {
+    list-style-type: none;
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+li {
+    height: 100px;
+    width: 100px;
+    background-color: var(--lightblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid var(--darkblue);
+}
+
+li.fizz {
+    background-color: var(--green);
+}
+
+li.buzz {
+    color: black;
+    background-color: var(--yellow);
+}
+
+li.fizzbuzz {
+    background-color: var(--red);
 }

@@ -14,20 +14,21 @@ let items = '';
 // Multipli 
 
 for (let i = 1; i < 101; i++) {
-    let content;
+    let content = i;
+    let classes = '';
 
     if (i % 15 === 0) {
         content ='FizzBuzz';
+        classes = 'fizzbuzz';
     } else if (i % 5 === 0) {
         content = 'Buzz';
+        classes = 'buzz';
     } else if (i % 3 === 0) {
         content = 'Fizz';
-    } else {
-        content = i;
+        classes = 'fizz';
     }
 
-    console.log(content);
-
+    items += `<li class= "${classes}">${content}</li>`;
 }
 
 list.innerHTML = items;
