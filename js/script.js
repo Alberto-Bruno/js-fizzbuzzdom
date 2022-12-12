@@ -14,18 +14,19 @@ let items = '';
 // Multipli 
 
 for (let i = 1; i < 101; i++) {
+
     let content = i;
     let classes = '';
 
     if (i % 15 === 0) {
         content ='FizzBuzz';
-        classes = 'fizzbuzz';
+        classes = 'fizzbuzz'
     } else if (i % 5 === 0) {
         content = 'Buzz';
-        classes = 'buzz';
+        classes = 'buzz'
     } else if (i % 3 === 0) {
         content = 'Fizz';
-        classes = 'fizz';
+        classes = 'fizz'
     }
 
     items += `<li class= "${classes}">${content}</li>`;
