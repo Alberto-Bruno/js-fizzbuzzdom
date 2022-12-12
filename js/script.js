@@ -8,26 +8,26 @@ console.log('JS OK');
 */
 
 // Prendo gli elementi
+const list = document.getElementById('number-list')
 
-
+let items = '';
 // Multipli 
 
 for (let i = 1; i < 101; i++) {
-    if (i % 3 === 0) {
-        console.log('Frizz');
+    let content;
+
+    if (i % 15 === 0) {
+        content ='FizzBuzz';
+    } else if (i % 5 === 0) {
+        content = 'Buzz';
+    } else if (i % 3 === 0) {
+        content = 'Fizz';
     } else {
-        console.log(i);
-    }
-    
-    if (i % 5 === 0) {
-        console.log('Buzz');
-    } else {
-        console.log(i);
+        content = i;
     }
 
-    if( (i % 3 == 0) && (i % 5 == 0) ) {
-        console.log('FrizzBuzz')
-    }
+    console.log(content);
 
 }
 
+list.innerHTML = items;
